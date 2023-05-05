@@ -6,6 +6,7 @@ ENCODING = 'utf-8-sig'
 AWS_KEY_ID = ''
 AWS_KEY = ''
 REGION = 'ap-southeast-2'
+TTL = 300
 
 
 def get_zone_id(host, zone_name_id):
@@ -26,7 +27,7 @@ def update_dns(host, ip, zone_id):
                                 'Value': ip,
                             },
                         ],
-                        'TTL': 300,
+                        'TTL': TTL,
                         'Type': 'A',
                     },
                 },
