@@ -1,4 +1,8 @@
 # update_r53_hosts
+
+Requirements\
+pip install boto3
+
 Updates DNS entries on Route53\
 Input file is a CSV like the following:
 
